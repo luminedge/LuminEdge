@@ -1,84 +1,97 @@
 // Sample product data with gallery images
 const products = [
     {
-        name: "Elegant Jewelry Box",
+        name: "Frosted acrylic box",
         category: "storage",
         price: "$25",
-        image: "images/jewelry-box.jpg",
+        image: "images/storage-box-01-01.jpg",
         info: `
-            Product Name: Elegant Jewelry Box<br>
-            Material: Acrylic / PMMA / Lucite<br>
-            Size: Custom<br>
-            Thickness: Custom<br>
-            Sample: Available<br>
-            Logo: Accept print your private logo<br>
+            <strong>Cherished Moments in a Box: The Enchantment of UV Gradient Acrylic Gift Boxes</strong><br>
+            Discover a new horizon in the art of gifting with our unique UV gradient acrylic gift box, a vessel not just for presents, but for emotions as well. Each box features a warm orange hue that softly transitions into a serene pink, reminiscent of a dawn sky's splendid gradient, captivating the eye and enchanting the heart. This masterpiece box is designed for an array of occasions, from the intimate moments of birthdays and anniversaries to the grand celebrations of weddings and corporate milest...<br>
+            Product Name: Frosted acrylic box <br>    
+            Material: acrylic sheet <br>
+            Size: customizable<br>
+            Thickness: customizable<br>
+            Sample: Include Sample<br>
+            Logo: customizable<br>
             OEM&ODM: Available<br>
-            Processing: (Handmade) Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Processing: (Handmade)Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Delivery Terms: DHL, UPS,FEDEX,DDP by air or by sea; FOB,CIF,EXW etc<br>
             Shipping Port: Yantian Shenzhen<br>
-            Leadtime: Based on your quantity
+            Leadtime: Dase on your quantity<br>
         `,
-        gallery: ["images/jewelry-box.jpg", "images/jewelry-box-2.jpg", "images/jewelry-box-3.jpg"],
-        whatsappLink: "https://wa.me/00989233479443?text=I%20want%20to%20order%20Elegant%20Jewelry%20Box"
+        gallery: ["images/storage-box-01-01.jpg", "images/storage-box-01-02.jpg", "images/storage-box-01-03.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Frosted%20Acrylic%20Box"
     },
     {
         name: "Laser-Cut Pet Earrings",
-        category: "jewelry",
+        category: "fashion",
         price: "$15",
         image: "images/laser-earring-01.jpg",
         info: `
-            Product Name: Elegant Jewelry Box<br>
+            <strong>Laser-Cut Pet Earrings</strong><br>
+            Laser-Cut Pet Earrings stunning poster display or photographic frame, These modern, clear perspex frames are very popular! Please feel free to get customized products made in China at a good price from us.<br>
+            Product Name: Laser-Cut Pet Earrings<br>
             Material: Acrylic / PMMA / Lucite<br>
             Size: Custom<br>
-            Thickness: Custom<br>
+            Thickness: 3mm<br>
             Sample: Available<br>
             Logo: Accept print your private logo<br>
             OEM&ODM: Available<br>
-            Processing: (Handmade) Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Processing: (Handmade)Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Delivery Terms: DHL, UPS,FEDEX,DDP by air or by sea; FOB,CIF,EXW etc<br>
             Shipping Port: Yantian Shenzhen<br>
-            Leadtime: Based on your quantity
+            Leadtime: Dase on your quantity<br>
+
         `,
-        gallery: ["images/laser-earring-01.jpg", "images/laser-earring-02.jpg"],
-        whatsappLink: "https://wa.me/00989233479443?text=I%20want%20to%20order%20Laser-Cut%20Pet%20Earrings"
+        gallery: ["images/laser-earring-01.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Laser-Cut%20Pet%20Earrings"
     },
     {
-        name: "Acrylic Wall Art",
-        category: "wall-art",
+        name: "Wall mounted Acrylic Photo Frames",
+        category: "frame",
         price: "$40",
-        image: "images/wall-art-01.jpg",
+        image: "images/frame-01-01.jpg",
         info: `
-            Product Name: Elegant Jewelry Box<br>
+            <strong>Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame</strong><br>
+            Wall-mounted clear acrylic poster kits create a stunning poster display or photographic frame, These modern, clear perspex frames are very popular! Please feel free to get customized products made in China at a good price from us.<br>
+            Product Name: Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame<br>
             Material: Acrylic / PMMA / Lucite<br>
             Size: Custom<br>
-            Thickness: Custom<br>
+            Thickness: 3mm<br>
             Sample: Available<br>
             Logo: Accept print your private logo<br>
             OEM&ODM: Available<br>
-            Processing: (Handmade) Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Processing: (Handmade)Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Delivery Terms: DHL, UPS,FEDEX,DDP by air or by sea; FOB,CIF,EXW etc<br>
             Shipping Port: Yantian Shenzhen<br>
-            Leadtime: Based on your quantity
+            Leadtime: Dase on your quantity<br>
         `,
-        gallery: ["images/wall-art-01.jpg", "images/wall-art-02.jpg"],
-        whatsappLink: "https://wa.me/00989233479443?text=I%20want%20to%20order%20Acrylic%20Wall%20Art"
+        gallery: ["images/frame-01-01.jpg", "images/frame-01-02.jpg", "images/frame-01-03.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Acrylic%20Wall%20Mounted%20Photo%20Frames"
     },
     {
         name: "Limited Edition Poker Set",
-        category: "games",
+        category: "limited",
         price: "$100",
         image: "images/poker-set.jpg",
         info: `
-            Product Name: Elegant Jewelry Box<br>
+            <strong>Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame</strong><br>
+            Wall-mounted clear acrylic poster kits create a stunning poster display or photographic frame, These modern, clear perspex frames are very popular! Please feel free to get customized products made in China at a good price from us.<br>
+            Product Name: Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame<br>
             Material: Acrylic / PMMA / Lucite<br>
             Size: Custom<br>
-            Thickness: Custom<br>
+            Thickness: 3mm<br>
             Sample: Available<br>
             Logo: Accept print your private logo<br>
             OEM&ODM: Available<br>
-            Processing: (Handmade) Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Processing: (Handmade)Cutting - Laser engraving - Polishing - Gluing - Cleaning - Packing<br>
+            Delivery Terms: DHL, UPS,FEDEX,DDP by air or by sea; FOB,CIF,EXW etc<br>
             Shipping Port: Yantian Shenzhen<br>
-            Leadtime: Based on your quantity
+            Leadtime: Dase on your quantity<br>
         `,
-        gallery: ["images/poker-set.jpg", "images/poker-set-1.jpg", "images/poker-set-2.jpg"],
-        whatsappLink: "https://wa.me/00989233479443?text=I%20want%20to%20order%20Limited%20Edition%20Poker%20Set"
+        gallery: ["images/poker-set.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Limited%20Edition%20Poker%20Set"
     }
 ];
 
