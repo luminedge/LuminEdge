@@ -19,3 +19,6 @@ main {
 .card:hover {
     transform: scale(1.05);
 }
+.category-card img {
+    margin-bottom: 10px;
+}

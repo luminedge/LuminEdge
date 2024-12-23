@@ -24,14 +24,14 @@ const products = [
         whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Frosted%20Acrylic%20Box"
     },
     {
-        name: "Laser-Cut Pet Earrings",
-        category: "fashion",
+        name: "Acrylic Sneakers Display Box Shoe Box Whole",
+        category: "display",
         price: "$15",
-        image: "images/laser-earring-01.jpg",
+        image: "images/display-01-01.jpg",
         info: `
-            <strong>Laser-Cut Pet Earrings</strong><br>
+            <strong>Acrylic Sneakers Display Box Shoe Box Whole</strong><br>
             Laser-Cut Pet Earrings stunning poster display or photographic frame, These modern, clear perspex frames are very popular! Please feel free to get customized products made in China at a good price from us.<br>
-            Product Name: Laser-Cut Pet Earrings<br>
+            Product Name: Acrylic Sneakers Display Box Shoe Box Whole<br>
             Material: Acrylic / PMMA / Lucite<br>
             Size: Custom<br>
             Thickness: 3mm<br>
@@ -44,18 +44,18 @@ const products = [
             Leadtime: Dase on your quantity<br>
 
         `,
-        gallery: ["images/laser-earring-01.jpg"],
-        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Laser-Cut%20Pet%20Earrings"
+        gallery: ["images/display-01-01.jpg", "images/display-01-02.jpg", "images/display-01-03.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Acrylic%20Sneakers%20Display"
     },
     {
-        name: "Wall mounted Acrylic Photo Frames",
-        category: "frame",
+        name: "Food Grade Acrylic Food Tray",
+        category: "decor",
         price: "$40",
-        image: "images/frame-01-01.jpg",
+        image: "images/decor-01-01.jpg",
         info: `
-            <strong>Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame</strong><br>
-            Wall-mounted clear acrylic poster kits create a stunning poster display or photographic frame, These modern, clear perspex frames are very popular! Please feel free to get customized products made in China at a good price from us.<br>
-            Product Name: Wall mounted Acrylic Photo Frames Acrylic Hanging Picture Frame<br>
+            <strong>Food Grade Acrylic Food Tray</strong><br>
+            Acrylic trays wholesale, Clear acrylic tray with handles, Acrylic tray black, Acrylic tray square. Each tray is handmade, and completely customizable, Made with crystal-clear, laser-cut acrylic, these chic, stylish serving and decorative trays breathe life into any room. <br>
+            Product Name: Food Grade Acrylic Food Tray<br>
             Material: Acrylic / PMMA / Lucite<br>
             Size: Custom<br>
             Thickness: 3mm<br>
@@ -67,8 +67,8 @@ const products = [
             Shipping Port: Yantian Shenzhen<br>
             Leadtime: Dase on your quantity<br>
         `,
-        gallery: ["images/frame-01-01.jpg", "images/frame-01-02.jpg", "images/frame-01-03.jpg"],
-        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Acrylic%20Wall%20Mounted%20Photo%20Frames"
+        gallery: ["images/decor-01-01.jpg", "images/decor-01-02.jpg"],
+        whatsappLink: "https://wa.me/+989233479443?text=I%20want%20to%20order%20Acrylic%20Food%20Tray"
     },
     {
         name: "Limited Edition Poker Set",
