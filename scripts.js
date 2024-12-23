@@ -131,6 +131,13 @@ const renderProducts = (filter = "all") => {
     });
 };
 
+const categoryFilter = document.getElementById("category-filter");
+if (categoryFilter) {
+    categoryFilter.addEventListener("change", (event) => {
+        renderProducts(event.target.value);
+    });
+}
+
 // Open product info modal
 const openProductInfo = (index) => {
     const product = products[index];
@@ -145,6 +152,7 @@ const openProductInfo = (index) => {
     const infoModal = new bootstrap.Modal(document.getElementById("productInfoModal"));
     infoModal.show();
 };
+
 
 // Initialize the page
 if (document.getElementById("products-grid")) {
