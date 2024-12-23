@@ -22,3 +22,8 @@ main {
 .category-card img {
     margin-bottom: 10px;
 }
+.cat-btn{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
