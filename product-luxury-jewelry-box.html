@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Box - LuminEdge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <!-- Same navigation as other pages -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Announcement Banner -->
+    <div class="bg-primary text-white text-center py-2">
+        <marquee behavior="scroll" direction="left">
+            🌟 Check out our new arrivals! Enjoy up to 20% off on selected items. 🌟
+        </marquee>
+    </div>
+
+    <main class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item"><a href="storage-solutions.html">Storage Solutions</a></li>
+                <li class="breadcrumb-item"><a href="jewelry-boxes.html">Jewelry Boxes</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Luxury Jewelry Box</li>
+            </ol>
+        </nav>
+        
+        <h1>Luxury Jewelry Box</h1>
+
+        <div class="row animate__animated animate__fadeInUp">
+            <div class="col-md-6 ">
+                <img id="main-image" src="images/storage-box-01-01.jpg" class="img-fluid product-image mb-3" alt="Luxury Jewelry Box">
+                
+                <div class="thumbnails d-flex justify-content-start">
+                    <!-- Thumbnails -->
+                    <img src="images/storage-box-01-01.jpg" onclick="setMainImage(this.src)" class="img-fluid active" alt="View 1">
+                    <img src="images/storage-box-01-02.jpg" onclick="setMainImage(this.src)" class="img-fluid" alt="View 2">
+                    <img src="images/storage-box-01-03.jpg" onclick="setMainImage(this.src)" class="img-fluid" alt="View 3">
+                    <!-- Add more thumbnails as needed -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Description</h2>
+                <p>Experience elegance with our Luxury Jewelry Box, designed to keep your valuables safe and stylishly organized.</p>
+                
+                <h3>Features:</h3>
+                <ul>
+                    <li>High-quality materials</li>
+                    <li>Multiple compartments</li>
+                    <li>Elegant design</li>
+                </ul>
+
+                <h3>Price:</h3>
+                <p>$150.00</p>
+
+                <button onclick="openWhatsApp()" class="btn btn-primary">Order Now</button>
+
+                <script>
+                    function openWhatsApp() {
+                        console.log("clicked");
+                        window.open('https://wa.me/+989233479443?text=I%20would%20like%20to%20order%20the%20Luxury%20Jewelry%20Box', '_blank');
+                    }
+                    
+                    function setMainImage(src) {
+                        document.getElementById('main-image').src = src;
+                        
+                        // Remove 'active' class from all thumbnails
+                        document.querySelectorAll('.thumbnails img').forEach(img => {
+                            img.classList.remove('active');
+                        });
+                        
+                        // Add 'active' class to the clicked thumbnail
+                        event.target.classList.add('active');
+                    }
+                </script>
+            </div>
+        </div>
+
+        <section class="related-products mt-5">
+            <h2>Related Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="images/display-01-03.jpg" class="card-img-top" alt="Another Box">
+                        <div class="card-body animate__animated animate__pulse">
+                            <h5 class="card-title">Another Box</h5>
+                            <p class="card-text">A different style for your collection.</p>
+                            <a href="product-another-jewelry-box.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More related products -->
+            </div>
+        </section>
+    </main>
+
+        <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">What Our Customers Say</h2>
+            <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Absolutely love the jewelry box! Great quality and design."</p>
+                        <h6>- Sarah J.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"The laser-cut earrings are stunning. Will definitely order again!"</p>
+                        <h6>- Mike L.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"The poker set was a hit at our game night. Highly recommend!"</p>
+                        <h6>- Emily R.</h6>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 LuminEdge. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

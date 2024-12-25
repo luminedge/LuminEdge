@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - LuminEdge</title>
+    <title>Home - LuminEdge</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <!-- Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">LuminEdge</a>
+                <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,70 +29,113 @@
         </nav>
     </header>
 
-    <!-- Products Section -->
-    <main class="container my-5">
-        <h2 class="text-center">Our Products</h2>
-        <div class="d-flex justify-content-center my-4">
-            <select id="category-filter" class="form-select w-auto">
-                <option value="all">All Categories</option>
-                <option value="storage">Storage</option>
-                <option value="fashion">Fashion</option>
-                <option value="decor">Decor</option>
-                <option value="display">Display</option>
-                <option value="limited">Limited</option>
-            </select>
-        </div>
-        <div id="products-grid" class="row">
-            <!-- Dynamic product cards will be rendered here -->
-        </div>
-    </main>
+    <!-- Announcement Banner -->
+    <div class="bg-primary text-white text-center py-2">
+        <marquee behavior="scroll" direction="left">
+            🌟 Check out our new arrivals! Enjoy up to 20% off on selected items. 🌟
+        </marquee>
+    </div>
 
-    <!-- Product Gallery Modal -->
-    <div class="modal fade" id="productGalleryModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productGalleryTitle"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Explore Our Categories</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- First Row -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-storage.png" class="card-img-top" alt="Jewelry Boxes">
+                        <h5 class="card-title">Storage Solutions</h5>
+                        <a href="storage-solutions.html" class="btn btn-primary w-100">View Category</a>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" id="carouselImages">
-                            <!-- Gallery images will be inserted dynamically -->
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-fashion.png" class="card-img-top" alt="Jewelry Boxes">
+                        <h5 class="card-title">Jewelry & Fashion</h5>
+                        <a href="jewelry-fashion.html" class="btn btn-primary w-100">View Category</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-decor.png" class="card-img-top" alt="Jewelry Boxes">
+                        <h5 class="card-title">Wall & Home Decor</h5>
+                        <a href="wall-home.html" class="btn btn-primary w-100">View Category</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-game.png" class="card-img-top" alt="Jewelry Boxes">
+
+                        <h5 class="card-title">Gaming & Entertainment</h5>
+                        <a href="gaming-entertainment.html" class="btn btn-primary w-100">View Category</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-office.png" class="card-img-top" alt="Jewelry Boxes">
+
+                        <h5 class="card-title">Office & Commercial</h5>
+                        <a href="office-commercial.html" class="btn btn-primary w-100">View Category</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body animate__animated animate__bounce text-center">
+                        <img src="images/category-gift.png" class="card-img-top" alt="Keychains">
+                        <h5 class="card-title">Lifestyle & Gifts</h5>
+                        <a href="lifestyle-gifts.html" class="btn btn-primary w-100">View Category</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Product Info Modal -->
-<div class="modal fade" id="productInfoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="productInfoTitle"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="animate__animated animate__fadeInDown">What Our Customers Say</h2>
+                <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>"Absolutely love the jewelry box! Great quality and design."</p>
+                            <h6>- Sarah J.</h6>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"The laser-cut earrings are stunning. Will definitely order again!"</p>
+                            <h6>- Mike L.</h6>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"The poker set was a hit at our game night. Highly recommend!"</p>
+                            <h6>- Emily R.</h6>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
-            <div class="modal-body" id="productInfoBody">
-                <!-- Product info will be inserted dynamically -->
-            </div>
-        </div>
-    </div>
-</div>
-
+    </section>
 
     <footer class="text-center py-3 bg-dark text-white">
-        <p>&copy; 2024 LuminEdge. All rights reserved.</p>
+        <p>© 2024 LuminEdge. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

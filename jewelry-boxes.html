@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Boxes - LuminEdge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <!-- Same navigation as other pages -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Announcement Banner -->
+    <div class="bg-primary text-white text-center py-2">
+        <marquee behavior="scroll" direction="left">
+            🌟 Check out our new arrivals! Enjoy up to 20% off on selected items. 🌟
+        </marquee>
+    </div>
+
+    <main class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item"><a href="storage-solutions.html">Storage Solutions</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Jewelry Boxes</li>
+            </ol>
+        </nav>
+        
+        <h1>Jewelry Boxes</h1>
+        
+        <section class="product-grid">
+            <div class="row">
+                <!-- Product Cards -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body animate__animated animate__bounce">
+                        <img src="images/jewelry-box-1.jpg" class="card-img-top" alt="Luxury Jewelry Box">
+                            <h5 class="card-title">Luxury Jewelry Box</h5>
+                            <p class="card-text">Store your treasures in this elegant box.</p>
+                            <a href="product-luxury-jewelry-box.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More product cards here -->
+            </div>
+        </section>
+    </main>
+
+        <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">What Our Customers Say</h2>
+            <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Absolutely love the jewelry box! Great quality and design."</p>
+                        <h6>- Sarah J.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"The laser-cut earrings are stunning. Will definitely order again!"</p>
+                        <h6>- Mike L.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"The poker set was a hit at our game night. Highly recommend!"</p>
+                        <h6>- Emily R.</h6>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 LuminEdge. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
