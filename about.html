@@ -38,17 +38,64 @@
         <p class="text-center animate__animated animate__pulse">Craftsmanship meets innovation at LuminEdge. We specialize in creating high-quality, custom-designed acrylic products.</p>
 
         <h3 class="reveal">Our Features</h3>
+
         <ul class="list-unstyled animate__animated animate__pulse">
-            <li class="mb-3">
+            <li class="mb-3 feature-item" data-bs-toggle="modal" data-bs-target="#customizableModal">
                 <span class="h5 d-inline-block me-2">✨</span> Customizable offers for subscribing customers.
             </li>
-            <li class="mb-3">
+            <li class="mb-3 feature-item" data-bs-toggle="modal" data-bs-target="#designsModal">
                 <span class="h5 d-inline-block me-2">🎨</span> Unique and personalized designs.
             </li>
-            <li class="mb-3">
+            <li class="mb-3 feature-item" data-bs-toggle="modal" data-bs-target="#limitedEditionModal">
                 <span class="h5 d-inline-block me-2">🔒</span> Limited edition products for exclusive buyers.
             </li>
         </ul>
+        
+        <!-- Modals for each feature -->
+        <div class="modal fade" id="customizableModal" tabindex="-1" aria-labelledby="customizableModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="customizableModalLabel">Customizable Offers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/storage-box-01-01.jpg" class="img-fluid" alt="Customizable Offers">
+                        <p>Here's how we personalize your shopping experience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="designsModal" tabindex="-1" aria-labelledby="designsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="designsModalLabel">Unique Designs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/decor-01-01.jpg" class="img-fluid" alt="Unique Designs">
+                        <p>See our gallery of one-of-a-kind designs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="limitedEditionModal" tabindex="-1" aria-labelledby="limitedEditionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="limitedEditionModalLabel">Limited Editions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/poker-set.jpg" class="img-fluid" alt="Limited Editions">
+                        <p>Discover our exclusive collections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <h3 class="reveal">Why Choose Us?</h3>
         <p class="animate__animated animate__pulse">We are dedicated to delivering quality products that meet your expectations and enhance your experience. Explore our innovative and stylish designs today!</p>

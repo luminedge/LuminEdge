@@ -115,3 +115,9 @@ main {
 .contact-option .btn:hover{
     background-color: lightblue;
 }
+.feature-item {
+    cursor: pointer;
+}
+.feature-item:hover {
+    text-decoration: underline;
+}
