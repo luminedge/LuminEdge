@@ -42,26 +42,26 @@
     <!-- Interactive Contact Section -->
     <main class="container my-5">
         <h2 class="text-center animate__animated animate__fadeInDown">Get in Touch</h2>
-        <p class="text-center animate__animated animate__fadeIn">Contact us via WhatsApp for quick responses or reach out using the details below.</p>
+        <p class="text-center animate__animated animate__fadeIn">Contact us via WhatsApp for quick responses or reach out using the other options here.</p>
 
         <div class="row justify-content-center">
             <!-- WhatsApp -->
             <div class="col-md-3 mb-4 contact-option animate__animated animate__pulse animate__infinite">
-                <a href="https://wa.me/+989233479443" class="btn btn-success btn-lg w-100">
+                <a href="https://wa.me/+989233479443" class="btn btn-lg w-100">
                     <img src="images/whatsapp.png" alt="Chat">
                 </a>
             </div>
 
             <!-- Phone -->
             <div class="col-md-3 mb-4 contact-option animate__animated animate__pulse animate__infinite">
-                <a href="tel:+989233479443" class="btn btn-primary btn-lg w-100">
+                <a href="tel:+989233479443" class="btn btn-lg w-100">
                     <img src="images/phone-call.png" alt="Call">
                 </a>
             </div>
 
             <!-- Email -->
             <div class="col-md-3 mb-4 contact-option animate__animated animate__pulse animate__infinite">
-                <a href="mailto:LuminEdgeTeam@gmail.com" class="btn btn-info btn-lg w-100">
+                <a href="mailto:LuminEdgeTeam@gmail.com" class="btn btn-lg w-100">
                     <img src="images/email.png" alt="Mail">
                 </a>
             </div>
@@ -116,7 +116,7 @@
             const message = document.getElementById('message').value;
 
             // Encode the message to ensure special characters work in URL
-            const encodedMessage = encodeURIComponent(`Hi, I'm ${name}. My email is ${email} and I wanted to know if ${message}`);
+            const encodedMessage = encodeURIComponent(`Hi, I'm ${name} and I wanted to ${message}. My Email account is: ${email}`);
             const waMessage = `https://wa.me/+989233479443?text=${encodedMessage}`;
 
             // Open WhatsApp in a new window
