@@ -10,19 +10,42 @@
 </head>
 <body>
     <header>
-        <!-- Same navigation as other pages -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown  active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="home-products.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="fashion-products.html">Fashion</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="leisure-products.html">Leisure</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="gift-products.html">Gifts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" aria-current="page">About Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -41,7 +64,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="products.html">Products</a></li>
-                <li class="breadcrumb-item"><a href="storage-solutions.html">Storage Solutions</a></li>
+                <li class="breadcrumb-item"><a href="home-products.html">Home Products</a></li>
                 <li class="breadcrumb-item"><a href="jewelry-boxes.html">Jewelry Boxes</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Luxury Jewelry Box</li>
             </ol>
@@ -103,7 +126,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-3">
-                        <img src="images/display-01-03.jpg" class="card-img-top" alt="Another Box">
+                        <img src="images/display-01-02.jpg" class="card-img-top" alt="Another Box">
                         <div class="card-body animate__animated animate__pulse">
                             <h5 class="card-title">Another Box</h5>
                             <p class="card-text">A different style for your collection.</p>

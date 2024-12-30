@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - LuminEdge</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products - LuminEdge</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation and Announcement Banner -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -52,66 +52,47 @@
             </div>
         </nav>
     </header>
-
-    <!-- Announcement Banner -->
-    <div class="bg-primary text-white text-center py-2">
-        <marquee behavior="scroll" direction="left">
-            🌟 Check out our new arrivals! Enjoy up to 20% off on selected items. 🌟
-        </marquee>
-    </div>
-
     <main class="container py-5">
-        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Explore Our Categories</h1>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Home -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-home.png" class="card-img-top" alt="Home">
-                        <h5 class="card-title">Home</h5>
-                        <a href="home-products.html" class="btn btn-primary w-100">Explore</a>
-                    </div>
-                </div>
-            </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
 
-            <!-- Fashion -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-fashion.png" class="card-img-top" alt="Fashion">
-                        <h5 class="card-title">Fashion</h5>
-                        <a href="fashion-products.html" class="btn btn-primary w-100">Explore</a>
-                    </div>
-                </div>
-            </div>
+        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Home Products</h1>
+        <p class="text-center mb-5 animate__animated animate__fadeIn">Enhance your living space with our curated selection.</p>
 
-            <!-- Leisure -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Products directly under Home -->
             <div class="col">
                 <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-leisure.png" class="card-img-top" alt="Leisure">
-                        <h5 class="card-title">Leisure</h5>
-                        <a href="leisure-products.html" class="btn btn-primary w-100">Explore</a>
+                    <img src="images/storage-box-01-02.jpg" class="card-img-top" alt="Jewelry Box">
+                    <div class="card-body">
+                        <h5 class="card-title">Jewelry Boxes</h5>
+                        <p class="card-text">Elegant storage for your precious items.</p>
+                        <a href="jewelry-boxes.html" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Gifts -->
             <div class="col">
                 <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-gifts.png" class="card-img-top" alt="Gifts">
-                        <h5 class="card-title">Gifts</h5>
-                        <a href="gifts-products.html" class="btn btn-primary w-100">Explore</a>
+                    <img src="images/category-decor.png" class="card-img-top" alt="Jewelry Box">
+                    <div class="card-body">
+                        <h5 class="card-title">Wall Design</h5>
+                        <p class="card-text">Elegant storage for your precious items.</p>
+                        <a href="wall-design.html" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
+            <!-- Add more products here -->
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-white">
-        <p>© 2024 LuminEdge. All rights reserved.</p>
+    <footer>
+        <!-- Footer content -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
