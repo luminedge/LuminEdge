@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .category-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            /* height: 300px; */
+            object-fit: cover;
+            padding: 10%;
+            border-radius: 10px 10px 0 0;
+        }
+        .btn-explore {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-explore:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,7 +42,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -27,25 +50,17 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="home-products.html">Home</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="fashion-products.html">Fashion</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="leisure-products.html">Leisure</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="gift-products.html">Gifts</a>
-                                </li>
+                                <li><a class="dropdown-item" href="personal-fashion.html">Personal & Fashion Accessories</a></li>
+                                <li><a class="dropdown-item" href="home-essentials.html">Home Essentials</a></li>
+                                <li><a class="dropdown-item" href="lifestyle-leisure.html">Lifestyle & Leisure</a></li>
+                                <li><a class="dropdown-item" href="gifts-novelties.html">Gifts & Novelties</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html" aria-current="page">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -62,51 +77,132 @@
 
     <main class="container py-5">
         <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Explore Our Categories</h1>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Home -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-home.png" class="card-img-top" alt="Home">
-                        <h5 class="card-title">Home</h5>
-                        <a href="home-products.html" class="btn btn-primary w-100">Explore</a>
+
+        <div id="personal-fashion" class="mb-5">
+            <h2 class="text-center mb-3 animate__animated animate__fadeIn">Personal & Fashion Accessories</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-jewelry.png" class="card-img-top" alt="Jewelry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jewelry</h5>
+                            <p class="card-text">Earrings and Bracelets in Acrylic</p>
+                            <a href="jewelry-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Fashion -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-fashion.png" class="card-img-top" alt="Fashion">
-                        <h5 class="card-title">Fashion</h5>
-                        <a href="fashion-products.html" class="btn btn-primary w-100">Explore</a>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-jewelry.png" class="card-img-top" alt="Jewelry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Purses & Clutches</h5>
+                            <p class="card-text">Clutches and Purse in Acrylic</p>
+                            <a href="bag-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Add Beauty section for future expansion -->
             </div>
+        </div>
 
-            <!-- Leisure -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-leisure.png" class="card-img-top" alt="Leisure">
-                        <h5 class="card-title">Leisure</h5>
-                        <a href="leisure-products.html" class="btn btn-primary w-100">Explore</a>
+        <div id="home-essentials" class="mb-5">
+            <h2 class="text-center mb-3 animate__animated animate__fadeIn">Home Essentials</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-storage.png" class="card-img-top" alt="Storage">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Storage</h5>
+                            <p class="card-text">Jewelry Boxes</p>
+                            <a href="storage-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Gifts -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <img src="images/category-gifts.png" class="card-img-top" alt="Gifts">
-                        <h5 class="card-title">Gifts</h5>
-                        <a href="gifts-products.html" class="btn btn-primary w-100">Explore</a>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-decor.png" class="card-img-top" alt="Decor">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Decor</h5>
+                            <p class="card-text">Wall Art, Shelves, Candle Holders...</p>
+                            <a href="decor-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-decor.png" class="card-img-top" alt="Decor">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Furniture</h5>
+                            <p class="card-text">Tables, Chairs...</p>
+                            <a href="furniture-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="lifestyle-leisure" class="mb-5">
+            <h2 class="text-center mb-3 animate__animated animate__fadeIn">Lifestyle & Leisure</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-gaming.png" class="card-img-top" alt="Gaming">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gaming</h5>
+                            <p class="card-text">Poker Sets, Board Games...</p>
+                            <a href="gaming-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-office.png" class="card-img-top" alt="Home Office">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home Office</h5>
+                            <p class="card-text">Organizers, Calendars...</p>
+                            <a href="home-office-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-office.png" class="card-img-top" alt="Home Office">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Geek Glitz</h5>
+                            <p class="card-text">Organizers, Calendars...</p>
+                            <a href="geek-glitz-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gifts-novelties" class="mb-5">
+            <h2 class="text-center mb-3 animate__animated animate__fadeIn">Gifts & Novelties</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-personalized.png" class="card-img-top" alt="Personalized Items">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Personalized Items</h5>
+                            <p class="card-text">Custom Gift Boxes, Accessories...</p>
+                            <a href="personalized-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card category-card h-100 animate__animated animate__zoomIn">
+                        <img src="images/category-everyday.png" class="card-img-top" alt="Everyday Carry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Everyday Carry</h5>
+                            <p class="card-text">Keychains, Keyholders...</p>
+                            <a href="everyday-products.html" class="btn btn-primary btn-explore w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->

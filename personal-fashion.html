@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal & Fashion Accessories - LuminEdge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .fashion-highlight {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .fashion-highlight:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .accordion-button {
+            border-radius: 10px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="personal-fashion.html">Personal & Fashion Accessories</a></li>
+                                <li><a class="dropdown-item" href="home-essentials.html">Home Essentials</a></li>
+                                <li><a class="dropdown-item" href="lifestyle-leisure.html">Lifestyle & Leisure</a></li>
+                                <li><a class="dropdown-item" href="gifts-novelties.html">Gifts & Novelties</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Announcement Banner -->
+    <div class="bg-primary text-white text-center py-2">
+        <marquee behavior="scroll" direction="left">
+            🌟 Step up your style with our acrylic fashion accessories! 🌟
+        </marquee>
+    </div>
+
+    <main class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Personal & Fashion Accessories</li>
+            </ol>
+        </nav>
+
+        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Personal & Fashion Accessories</h1>
+        <p class="text-center mb-5 animate__animated animate__fadeIn">Adorn yourself with our unique, laser-cut acrylic pieces.</p>
+
+        <!-- Accordion for Subcategories -->
+        <div class="accordion" id="fashionAccordion">
+            <!-- Jewelry -->
+            <div class="accordion-item fashion-highlight">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Jewelry
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="fashionAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card fashion-highlight">
+                                    <img src="images/earrings.jpg" class="card-img-top" alt="Earrings">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Earrings</h5>
+                                        <p class="card-text">Unique and lightweight, made from laser-cut acrylic.</p>
+                                        <a href="earrings.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card fashion-highlight">
+                                    <img src="images/bracelets.jpg" class="card-img-top" alt="Bracelets">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bracelets</h5>
+                                        <p class="card-text">Acrylic on various bands for a modern look.</p>
+                                        <a href="bracelets.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Purses and Clutches -->
+            <div class="accordion-item fashion-highlight">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Purses & Clutches
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="fashionAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card fashion-highlight">
+                                    <img src="images/purses.jpg" class="card-img-top" alt="Purses">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Purses</h5>
+                                        <p class="card-text">Stylish and durable, crafted from acrylic.</p>
+                                        <a href="purses.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card fashion-highlight">
+                                    <img src="images/clutches.jpg" class="card-img-top" alt="Clutches">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Clutches</h5>
+                                        <p class="card-text">Elegant acrylic clutches for evening or day use.</p>
+                                        <a href="clutches.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Beauty -->
+            <div class="accordion-item fashion-highlight">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Beauty
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="fashionAccordion">
+                    <div class="accordion-body">
+                        <p class="text-center">Coming Soon: Hair Accessories and Cosmetic Organizers</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 LuminEdge. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

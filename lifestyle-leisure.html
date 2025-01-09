@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle & Leisure - LuminEdge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .leisure-highlight {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .leisure-highlight:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .accordion-button {
+            border-radius: 10px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__bounce" href="index.html">LuminEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="personal-fashion.html">Personal & Fashion Accessories</a></li>
+                                <li><a class="dropdown-item" href="home-essentials.html">Home Essentials</a></li>
+                                <li><a class="dropdown-item" href="lifestyle-leisure.html">Lifestyle & Leisure</a></li>
+                                <li><a class="dropdown-item" href="gifts-novelties.html">Gifts & Novelties</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Announcement Banner -->
+    <div class="bg-primary text-white text-center py-2">
+        <marquee behavior="scroll" direction="left">
+            🌟 Enhance your lifestyle with our innovative leisure products! 🌟
+        </marquee>
+    </div>
+
+    <main class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Lifestyle & Leisure</li>
+            </ol>
+        </nav>
+
+        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Lifestyle & Leisure</h1>
+        <p class="text-center mb-5 animate__animated animate__fadeIn">Elevate your hobbies and work with our unique, acrylic-crafted items.</p>
+
+        <!-- Accordion for Traditional Subcategories -->
+        <div class="accordion" id="leisureAccordion">
+            <!-- Gaming -->
+            <div class="accordion-item leisure-highlight">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Gaming
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="leisureAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card leisure-highlight">
+                                    <img src="images/poker-set.jpg" class="card-img-top" alt="Poker Set">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Poker Sets</h5>
+                                        <p class="card-text">Elevate game nights with acrylic chips.</p>
+                                        <a href="poker-sets.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card leisure-highlight">
+                                    <img src="images/board-game.jpg" class="card-img-top" alt="Board Game Accessories">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Board Game Accessories</h5>
+                                        <p class="card-text">XO, Chess, and more, all in acrylic.</p>
+                                        <a href="board-game-accessories.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Office -->
+            <div class="accordion-item leisure-highlight">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Home Office
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="leisureAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card leisure-highlight">
+                                    <img src="images/desktop-organizer.jpg" class="card-img-top" alt="Desktop Organizers">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desktop Organizers</h5>
+                                        <p class="card-text">Keep your workspace tidy and stylish.</p>
+                                        <a href="desktop-organizers.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card leisure-highlight">
+                                    <img src="images/acrylic-calendar.jpg" class="card-img-top" alt="Calendar">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Stationery</h5>
+                                        <p class="card-text">Functional and beautiful tabletop calendars.</p>
+                                        <a href="stationery.html" class="btn btn-primary w-100">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Section for Comic and Pop Culture -->
+        <section class="mt-5">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Geek Glitz</h2>
+            <p class="text-center mb-5 animate__animated animate__fadeIn"> where your geek pride gets the glam-up it's been waiting for.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Acrylic Stickers -->
+                <div class="col">
+                    <div class="card leisure-highlight">
+                        <img src="images/comic-stickers.jpg" class="card-img-top" alt="Acrylic Stickers">
+                        <div class="card-body">
+                            <h5 class="card-title">Acrylic Stickers</h5>
+                            <p class="card-text">Adorn your space with comic-inspired characters.</p>
+                            <a href="comic-stickers.html" class="btn btn-primary w-100">Explore Stickers</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wall Designs -->
+                <div class="col">
+                    <div class="card leisure-highlight">
+                        <img src="images/comic-wall-designs.jpg" class="card-img-top" alt="Wall Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Wall Designs</h5>
+                            <p class="card-text">Transform your room with vibrant comic art.</p>
+                            <a href="comic-wall-designs.html" class="btn btn-primary w-100">Explore Designs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 LuminEdge. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
