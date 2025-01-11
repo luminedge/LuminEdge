@@ -26,6 +26,10 @@ main {
 .card:hover {
     transform: scale(1.05);
 }
+.card img:hover{
+    transition: 1s;
+    opacity: 20%;
+}
 .category-card img {
     margin: 50px 0;
 }
@@ -120,4 +124,35 @@ main {
 }
 .feature-item:hover {
     text-decoration: underline;
+}
+
+
+.category-card {
+    transition: transform .3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.card-img-top {
+    object-fit: cover;
+    padding: 30%;
+    opacity: 1;
+    border-radius: 10px 10px 0 0;
+}
+.card-img-top:hover{
+    padding: 20%;
+    transition: 1s ease-in-out;
+    opacity: 20%;
+}
+.btn-explore {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-explore:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.btn-color{
+    background-color: black;
 }

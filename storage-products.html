@@ -7,25 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <style>
-        .product-card {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-        .product-img {
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-        }
-    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -36,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
@@ -68,31 +51,89 @@
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="products.html">Products</a></li>
                 <li class="breadcrumb-item"><a href="home-essentials.html">Home Essentials</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Storage</li>
+                <li class="breadcrumb-item active" aria-current="page">Storage Solutions</li>
             </ol>
         </nav>
-
-        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Storage Solutions</h1>
-        <p class="text-center mb-5 animate__animated animate__fadeIn">Keep your space neat and stylish with our acrylic storage options.</p>
-
-        <!-- Product Grid -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Jewelry Boxes -->
-            <div class="col">
-                <div class="card product-card h-100 animate__animated animate__zoomIn">
-                    <img src="images/jewelry-box.jpg" class="card-img-top product-img" alt="Jewelry Boxes">
-                    <div class="card-body">
-                        <h5 class="card-title">Jewelry Boxes</h5>
-                        <p class="card-text">Elegant acrylic storage for your precious items.</p>
-                        <a href="jewelry-boxes.html" class="btn btn-primary">View Details</a>
+        
+        <h1 class="my-4 animate__animated animate__fadeInDown">Storage Solutions</h1>
+        
+        <section class="product-grid">
+            <div class="row">
+                <!-- Jewelry Boxes -->
+                <div class="col-md-4">
+                    <div class="card home-highlight">
+                        <img src="images/008-shelf.png" class="card-img-top" alt="Shelves">
+                        <div class="card-body">
+                            <h5 class="card-title">Shelves</h5>
+                            <p class="card-text">Acrylic shelving for modern storage.</p>
+                            <a href="shelves.html" class="btn btn-primary w-100">Explore</a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card home-highlight">
+                        <img src="images/005-tissue-box.png" class="card-img-top" alt="Trays">
+                        <div class="card-body">
+                            <h5 class="card-title">Tissue Boxes</h5>
+                            <p class="card-text">Draw stylish all day long.</p>
+                            <a href="tissue-boxes.html" class="btn btn-primary w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card home-highlight">
+                        <img src="images/006-keys.png" class="card-img-top" alt="keyholder">
+                        <div class="card-body">
+                            <h5 class="card-title">keyholder</h5>
+                            <p class="card-text">Modern elegance with adjoining cuts of acrylic.</p>
+                            <a href="keyholder.html" class="btn btn-primary w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card home-highlight">
+                        <img src="images/004-box.png" class="card-img-top" alt="Jewelry Boxes">
+                        <div class="card-body">
+                            <h5 class="card-title">Jewelry Boxes</h5>
+                            <p class="card-text">Acrylic storage for your precious items.</p>
+                            <a href="jewelry-boxes.html" class="btn btn-primary w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more storage subcategories here if available -->
             </div>
-            
-            <!-- Add more storage products here if available -->
-        </div>
-
+        </section>
     </main>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">What Our Customers Say</h2>
+            <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"The jewelry box is beautiful and keeps everything in place."</p>
+                        <h6>- Emma L.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Love how the acrylic adds a touch of elegance to storage."</p>
+                        <h6>- Tom H.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"The design is both functional and a piece of art."</p>
+                        <h6>- Olivia G.</h6>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <footer class="text-center py-3 bg-dark text-white">
         <p>© 2024 LuminEdge. All rights reserved.</p>
