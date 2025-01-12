@@ -11,11 +11,8 @@ header {
 main {
     padding: 20px;
 }
-.breadcrumb{
-    color: black;
-}
 .card {
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
 }
 .card-body .card-img-top{
     padding: 30%;
@@ -37,7 +34,10 @@ main {
 .animated-text {
     animation: fadeInUp 1s ease-out;
 }
-
+.textStyle{
+    color: black;
+    text-decoration: none;
+}
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -89,7 +89,7 @@ main {
 .interactive-button {
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 .interactive-button:hover {
     transform: scale(1.05);
@@ -109,7 +109,7 @@ main {
 }
 .interactive-button:hover .button-arrow {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(-90px);
 }
 .contact-option .btn{
     background-color: transparent;
@@ -155,4 +155,46 @@ main {
 }
 .btn-color{
     background-color: black;
+}
+.ntd{
+    text-decoration: none;
+}
+
+
+.fashion-highlight {
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.fashion-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0);
+}
+.home-highlight {
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.home-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0);
+}
+.leisure-highlight {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.leisure-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.accordion-button {
+    border-radius: 10px;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #332D2D;
+    border-radius: 30px;
 }
